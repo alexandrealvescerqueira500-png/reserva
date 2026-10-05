@@ -5,6 +5,7 @@ include("../../vendor/autoload.php");
 include("../includes/cabecalho.php");
 include("../includes/menu.php");
 include("../includes/rodape.php");
+
 $itens = Item::listar();
 // echo "<pre>";
 // print_r($itens);
