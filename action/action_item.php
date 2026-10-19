@@ -10,11 +10,7 @@ switch($action){
         $item->descricao = $_POST['descricao'];
         $item->patrimonio = $_POST['patrimonio'];
         $item->cadastrar();
-        exit;
-        //header('location: /reserva/view/item/listar.php');
-        echo "<pre>";
-        print_r($item);
-        echo "</pre>";
+        header('location: /reserva/view/item/listar.php');
     break;    
     case 'excluir':
         $item->id = $_GET['id'];

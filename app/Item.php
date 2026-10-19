@@ -9,7 +9,7 @@ class Item{
     public function cadastrar(){
     
     $db = new DataBase('item');
-    $db->insert([
+    $this->id = $db->insert([
         'nome' => $this->nome,
         'descricao' => $this->descricao,
         'patrimonio' => $this->patrimonio
@@ -32,8 +32,7 @@ class Item{
           return  (new DataBase('item'))->select()->fetchAll(\PDO::FETCH_CLASS,self::class);
 }
 }
-$i =new Item();
-$i->listar();
+
 
 
 //    public function alterar()

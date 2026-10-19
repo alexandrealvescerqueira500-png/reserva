@@ -1,7 +1,7 @@
 <?php
 namespace App;
 use PDO;
-use PDOExecption;
+use PDOException;
 class DataBase{
     const HOST = 'localhost';
     const USER = 'root';
