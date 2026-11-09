@@ -64,7 +64,7 @@ $servidores = Servidor::listar();
                     <td class="text-nowrap">
 
                         <a
-                            href="/reserva/view/servidor/editar.php?id=<?= $servidor->id ?>"
+                            href="/reserva/view/servidor/alterar.php?id=<?= $servidor->id ?>"
                             class="btn btn-primary btn-sm"
                         >
                             Editar

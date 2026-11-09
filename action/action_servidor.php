@@ -23,20 +23,11 @@ switch ($action) {
         $servidor->cadastrar();
 
         header('Location: /reserva/view/servidor/listar.php');
-        exit;
+        break;
 
-    case 'excluir':
+        case 'alterar':
 
         $servidor->id = $_GET['id'];
-
-        $servidor->excluir();
-
-        header('Location: /reserva/view/servidor/listar.php');
-        exit;
-
-    case 'alterar':
-
-        $servidor->id = $_POST['id'];
         $servidor->nome = $_POST['nome'];
         $servidor->matricula = $_POST['matricula'];
         $servidor->cpf = $_POST['cpf'];
@@ -48,5 +39,16 @@ switch ($action) {
         $servidor->alterar();
 
         header('Location: /reserva/view/servidor/listar.php');
-        exit;
+        break;
+        
+    case 'excluir':
+
+        $servidor->id = $_GET['id'];
+
+        $servidor->excluir();
+
+        header('Location: /reserva/view/servidor/listar.php');
+        break;
+
+ 
 }

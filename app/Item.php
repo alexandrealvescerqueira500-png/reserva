@@ -31,6 +31,10 @@ class Item{
     public static function listar($where = null, $order = null, $limit = null) {
           return  (new DataBase('item'))->select()->fetchAll(\PDO::FETCH_CLASS,self::class);
 }
+
+    public static function buscarPorId($id){
+        return (new DataBase('item'))->select('id = '.$id)->fetchObject(self::class);
+    }
 }
 
 

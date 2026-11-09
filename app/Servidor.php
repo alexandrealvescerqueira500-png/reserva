@@ -69,4 +69,11 @@ class Servidor
                 self::class
             );
     }
+
+    public static function buscarPorId($id)
+    {
+        return (new DataBase('servidor'))
+            ->select('id = ' . (int) $id)
+            ->fetchObject(self::class);
+    }
 }

@@ -16,6 +16,14 @@ create table servidor(
     endereco varchar(100),
     dtn date
 );
+create table produto(
+    id int auto_increment primary key,
+    nome varchar(50),
+    dtn_validade date,
+    codigo int,
+    descricao varchar(140),
+    marca varchar(50)
+);
 create table emprestimo(
     id int auto_increment primary key,
     id_item int,

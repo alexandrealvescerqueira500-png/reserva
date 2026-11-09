@@ -12,8 +12,22 @@ switch($action){
         $item->cadastrar();
         header('location: /reserva/view/item/listar.php');
     break;    
+
+    case 'alterar':
+
+        $item = Item::buscarPorId($_GET['id']);
+        $item->nome = $_POST['nome'];
+        $item->descricao = $_POST['descricao'];
+        $item->patrimonio = $_POST['patrimonio'];
+       
+        $item->alterar();
+
+        header('Location: /reserva/view/item/listar.php');
+        break;
+
     case 'excluir':
         $item->id = $_GET['id'];
         $item->excluir();
         header('location: /reserva/view/item/listar.php');
+        break;
 }

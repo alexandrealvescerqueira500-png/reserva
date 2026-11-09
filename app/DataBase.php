@@ -24,9 +24,7 @@ class DataBase{
         }        
     }
     public function execute($query, $values = null){
-        try{echo "<pre>";
-          print_r($query);
-          echo "<pre>";
+        try{
             $statement = $this->connection->prepare($query);
             $statement->execute($values);
             return $statement;
