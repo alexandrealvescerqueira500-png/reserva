@@ -10,6 +10,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link" href="/reserva/view/item/listar.php">Item</a>
         </li>
         <li class="nav-item">
@@ -23,6 +24,17 @@
             <li><a class="dropdown-item" href="/reserva/view/item/listar.php">item</a></li>
             <li><a class="dropdown-item" href="/reserva/view/servidor/listar.php">Servidor</a></li>
             <li><a class="dropdown-item" href="/reserva/view/Emprestimo/listar.php">Emprestimo</a></li>
+=======
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+>>>>>>> a032ad8aecd08e850484080052dda1a27b7b891a
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>

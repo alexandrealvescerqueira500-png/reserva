@@ -6,7 +6,11 @@ class DataBase{
     const HOST = 'localhost';
     const USER = 'root';
     const PASS = '';
+<<<<<<< HEAD
     const DB = 'reserva';
+=======
+    const DB = 'sistema_reserva';
+>>>>>>> a032ad8aecd08e850484080052dda1a27b7b891a
     private $connection;
     private $table;
     public function __construct($table = null){

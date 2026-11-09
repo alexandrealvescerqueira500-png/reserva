@@ -10,6 +10,7 @@ switch($action){
         $item->descricao = $_POST['descricao'];
         $item->patrimonio = $_POST['patrimonio'];
         $item->cadastrar();
+<<<<<<< HEAD
         header('location: /reserva/view/item/listar.php');
     break;
     case 'alterar':
@@ -19,6 +20,13 @@ switch($action){
         $item->patrimonio = $_POST['patrimonio'];
         $item->alterar();
         header('location: /reserva/view/item/listar.php');
+=======
+        
+        header('location: /reserva/view/item/listar.php');
+        echo "<pre>";
+        print_r($item);
+        echo "</pre>";
+>>>>>>> a032ad8aecd08e850484080052dda1a27b7b891a
     break;    
     case 'excluir':
         $item->id = $_GET['id'];

@@ -17,7 +17,11 @@ create table servidor(
     dtn date not null
 );
 create table emprestimo(
+<<<<<<< HEAD
     id srial primary key,
+=======
+    id int auto_increment primary key,
+>>>>>>> a032ad8aecd08e850484080052dda1a27b7b891a
     id_item int not null,
     id_servidor int not null,
     data_emprestimo datetime not null,

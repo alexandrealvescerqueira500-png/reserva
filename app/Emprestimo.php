@@ -1,5 +1,6 @@
 <?php
 namespace App;
+<<<<<<< HEAD
 use PDO;
 class Emprestimo{
     public $id;
@@ -37,3 +38,12 @@ class Emprestimo{
         return (new DataBase('Emprestimo'))->select('id = '.$id)->fetchObject(self::class);
     }
 }
+=======
+class Emprestimo{
+    public $id;
+    public $item;
+    public $servidor;
+    public $dataEmprestimo;
+    public $dataDevolucao;
+}
+>>>>>>> a032ad8aecd08e850484080052dda1a27b7b891a
